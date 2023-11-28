@@ -8,7 +8,7 @@ namespace TechnicalInterviewTests.String_And_Array
         public void KthSmallest(int[] array, int k)
         {
             int holder;
-            if (k > 0)
+            if (k > 0 && k<array.Length)
             {
                 for (int i = 0; i < array.Length; i++)
                 {
@@ -26,13 +26,17 @@ namespace TechnicalInterviewTests.String_And_Array
                         }
                     }
                 }
-                Console.WriteLine(array[k - 1]);
+                foreach(int c in array)
+                {
+                    Console.Write(c+", ");
+                }
+                Console.WriteLine();
+                Console.WriteLine("The {0}th smallest is {1}", k, array[k-1]);
             }
             else
             {
-                Console.WriteLine("K is an unrealistic number");
+                Console.WriteLine("K is either less than 1 or k is bigger than the size of array.");
             }  
-            
         }
     }
 }
