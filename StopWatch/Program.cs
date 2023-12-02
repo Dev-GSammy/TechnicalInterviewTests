@@ -10,7 +10,11 @@ namespace NewClass
         
         static void Main(string[] args)
         {
-            
+            var TwoDeeMatrix = new _2DMatrices();
+            int[,] Matrix = {{0, 0, 0, 0},
+{0, 0, 0, 1},
+{0, 0, 0, 0}};
+            TwoDeeMatrix.printMatrix(Matrix);
             
         }
        

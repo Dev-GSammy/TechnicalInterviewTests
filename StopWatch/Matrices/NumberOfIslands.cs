@@ -1,7 +1,8 @@
 ﻿/*
 Given a 2D grid map of 1s (land) and 0s (water), count the number of islands.
 
-An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+An island is surrounded by water and is formed by connecting adjacent lands 
+horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
 Input: 
 {
